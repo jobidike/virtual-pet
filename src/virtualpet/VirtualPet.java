@@ -30,16 +30,24 @@ public class VirtualPet {
 	//setter
 	public void feed(int tiger) {
 		hunger-= tiger;
+		waste+= tiger;
 	}
 	public void bathroom(int tiger) {
 		waste-=tiger;
 	}
 	public void play(int tiger) {
 		boredom-=tiger;
+		tiredness+=tiger;
 	}
 	public void sleep(int tiger) {
 		tiredness-=tiger;
+		hunger+=tiger;
 	}
+	public void;
+	hunger+=2;
+	waste+=2;
+	boredom+=2;
+	tiredness+=2;
 	
 	//method of behavior
 	
