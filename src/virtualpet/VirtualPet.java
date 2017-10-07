@@ -14,7 +14,7 @@ public class VirtualPet {
 		this.boredom= boredom;
 		this.tiredness = tiredness;
 	}
-	
+	//Accessor (getter)
 	public int getHunger() {
 		return hunger;
 	}
@@ -25,7 +25,20 @@ public class VirtualPet {
 		return boredom;
 	}
 	public int getTiredness() {
-		return tiredness; 
+		return tiredness;
+	}
+	//setter
+	public void feed(int tiger) {
+		hunger-= tiger;
+	}
+	public void bathroom(int tiger) {
+		waste-=tiger;
+	}
+	public void play(int tiger) {
+		boredom-=tiger;
+	}
+	public void sleep(int tiger) {
+		tiredness-=tiger;
 	}
 	
 	//method of behavior
