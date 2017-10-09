@@ -14,7 +14,8 @@ public class VirtualPet {
 		this.boredom= boredom;
 		this.tiredness = tiredness;
 	}
-	//Accessor (getter)
+	
+	//Accessor method (getter)
 	public int getHunger() {
 		return hunger;
 	}
@@ -27,7 +28,8 @@ public class VirtualPet {
 	public int getTiredness() {
 		return tiredness;
 	}
-	//setter
+	
+	//tick() method
 	public void feed(int tiger) {
 		hunger-= tiger;
 		waste+= tiger;
@@ -38,29 +40,23 @@ public class VirtualPet {
 	public void play(int tiger) {
 		boredom-=tiger;
 		tiredness+=tiger;
+		hunger+=tiger;
 	}
 	public void sleep(int tiger) {
 		tiredness-=tiger;
 		hunger+=tiger;
 	}
-//	public void tick() {
-//	hunger-=15;
-//	waste-=5;
-//	boredom-=2;
-//	tiredness-=30;
-//	}
+	
 	
 	public String gameStats() {
 		return "Timothy the Tiger's game stats are now: \n"
 				+ "Hunger: " + hunger + " \nWaste: " 
 				+ waste + " \nBoredom: " + boredom + " \nTiredness: " 
 				+ tiredness;
+	
+	
 	}
 	
-	//method of behavior
-	
-	
-	
-	
+		
 }
 	
