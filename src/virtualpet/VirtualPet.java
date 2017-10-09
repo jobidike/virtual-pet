@@ -43,11 +43,19 @@ public class VirtualPet {
 		tiredness-=tiger;
 		hunger+=tiger;
 	}
-	public void;
-	hunger+=2;
-	waste+=2;
-	boredom+=2;
-	tiredness+=2;
+//	public void tick() {
+//	hunger-=15;
+//	waste-=5;
+//	boredom-=2;
+//	tiredness-=30;
+//	}
+	
+	public String gameStats() {
+		return "Timothy the Tiger's game stats are now: \n"
+				+ "Hunger: " + hunger + " \nWaste: " 
+				+ waste + " \nBoredom: " + boredom + " \nTiredness: " 
+				+ tiredness;
+	}
 	
 	//method of behavior
 	
